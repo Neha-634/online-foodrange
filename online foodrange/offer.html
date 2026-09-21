@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online foodrange</title>
+     <link rel="stylesheet" href="offer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <div class="topbar">
+            <div class="mainlogo">
+                <div class="logo">
+                    <img src="images\logo.png">
+                </div>
+                <div class="logoname">
+                    <h2>FOODRANGE</h2>
+                    <p>Fresh Food Delivered</p>
+                </div>
+                 <div class="menu">
+             <button onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>  
+                </div>
+            </div>
+            <div class="category">
+                <select>
+                    <option value="ALL CATEGORIES">ALL CATEGORIES</option>
+                    <option value="ALL CATEGORIES">Fruits & Veggies</option>
+                      <option value="ALL CATEGORIES">Dairy & Eggs</option>
+                        <option value="ALL CATEGORIES">Bakery</option>
+                          <option value="ALL CATEGORIES">Snacks & Munchies</option>
+                            <option value="ALL CATEGORIES">Beverages</option>
+                              <option value="ALL CATEGORIES">Non-Veg</option>
+                </select>
+               
+               
+            </div>
+            <div class="search">
+                <div class="search1">
+                    <form>
+                        <input type="text" placeholder="Search For Products">
+                    </form>
+                </div>
+                <div class="button">
+                    <button class="btncst"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="loginimg">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="loginname">
+                    <h2>My Account</h2>
+                    <p>Login/Sign Up</p>
+                </div>
+            </div>
+            <div class="wish">
+                <div class="wishimg">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="wish1">
+                    <h2>Wishlist</h2>
+                    <p>0 items</p>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cartimg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cartname">
+                    <h2>My Cart</h2>
+                    <p>0 items</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="secheader">
+        <div class="browse">
+            <h4>Browse Categories</h4>
+        </div>
+        <div class="list">
+            <ul id="hiddenmenu">
+                <button onclick="classMenu()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Shop</a></li>
+                <li><a href="offer.html"class="active">Offers</a></li>
+                <li><a href="combo.html">Combo Packs</a></li>
+                <li><a href="aboutus.html">About US</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="free">
+            <h4>Free Delivery</h4>
+        </div>
+    </div>
+    <section class="offer-banner">
+
+    <img src="images\left leaf.jpg" class="leaf leaf1">
+
+    <img src="images\tomato.jpg" class="leaf tomato">
+
+    <img src="images\left leaf.jpg" class="leaf leaf2">
+
+    <img src="images\choco.jpg" class="leaf chocolate">
+
+    <div class="container">
+
+        <div class="left-content">
+
+            <h5>Exciting Offers,</h5>
+
+            <h1>Great Savings!</h1>
+
+            <p>
+                Grab the best deals on your favourite
+                fresh food items. Limited time offers!
+            </p>
+
+            <span class="line"></span>
+
+        </div>
+
+        <div class="right-content">
+
+            <div class="offer-box red">
+
+                BEST
+
+            </div>
+
+            <div class="offer-box yellow">
+
+                OFFERS
+
+            </div>
+
+            <div class="offer-box green">
+
+                LIMITED TIME ONLY
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="top-offers">
+
+    <div class="section-head">
+
+        <h2>Top Offers</h2>
+
+        <a href="#">View All Offers →</a>
+
+    </div>
+
+    <div class="offer-grid">
+
+        <!-- Card -->
+
+        <div class="offer-card">
+
+            <span class="badge red">25% OFF</span>
+
+            <img src="images\a.webp" alt="">
+
+            <h3>Fresh Red Apples (1kg)</h3>
+
+            <div class="coupon">
+
+                Use Code:
+                <strong>APPLE25</strong>
+
+            </div>
+
+            <div class="price">
+
+                <span class="new">$2.99</span>
+
+                <span class="old">$3.99</span>
+
+            </div>
+
+            <p class="expiry">
+
+                Valid till 20 May 2025
+
+            </p>
+
+            <button>
+
+                🛒 SHOP NOW
+
+            </button>
+
+        </div>
+         <div class="offer-card">
+
+            <span class="badge red">25% OFF</span>
+
+            <img src="images\biyani.jpg" alt="">
+
+            <h3>Biryani</h3>
+
+            <div class="coupon">
+
+                Use Code:
+                <strong>BIRYANI85</strong>
+
+            </div>
+
+            <div class="price">
+
+                <span class="new">$2.49</span>
+
+                <span class="old">$3.29</span>
+
+            </div>
+
+            <p class="expiry">
+
+                Valid till 19 May 2025
+
+            </p>
+
+            <button>
+
+                🛒 SHOP NOW
+
+            </button>
+
+        </div>
+         <div class="offer-card">
+
+            <span class="badge red">25% OFF</span>
+
+            <img src="images\layys.webp" alt="">
+
+            <h3>LAYS</h3>
+
+            <div class="coupon">
+
+                Use Code:
+                <strong>LAYS25</strong>
+
+            </div>
+
+            <div class="price">
+
+                <span class="new">$2.99</span>
+
+                <span class="old">$3.99</span>
+
+            </div>
+
+            <p class="expiry">
+
+                Valid till 20 Jun 2025
+
+            </p>
+
+            <button>
+
+                🛒 SHOP NOW
+
+            </button>
+
+        </div>
+         <div class="offer-card">
+
+            <span class="badge red">25% OFF</span>
+
+            <img src="images\milk.jpg" alt="">
+
+            <h3>Milk </h3>
+
+            <div class="coupon">
+
+                Use Code:
+                <strong>Milk25</strong>
+
+            </div>
+
+            <div class="price">
+
+                <span class="new">$2.99</span>
+
+                <span class="old">$3.99</span>
+
+            </div>
+
+            <p class="expiry">
+
+                Valid till 20 Apr 2025
+
+            </p>
+
+            <button>
+
+                🛒 SHOP NOW
+
+            </button>
+
+        </div>
+
+        <!-- Duplicate this card -->
+        <!-- Banana -->
+        <!-- Potato -->
+        <!-- Milk -->
+
+    </div>
+
+</section>
+
+
+  <section class="feature-bar">
+
+    <div class="feature-item">
+
+        <div class="icon green">
+            <i class="fa-solid fa-leaf"></i>
+        </div>
+
+        <div class="text">
+            <h4>100% Fresh</h4>
+            <p>Farm to Home</p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <div class="icon orange">
+            <i class="fa-solid fa-truck-fast"></i>
+        </div>
+
+        <div class="text">
+            <h4>On Time Delivery</h4>
+            <p>On Time, Every Time</p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <div class="icon orange">
+            <i class="fa-solid fa-shield-heart"></i>
+        </div>
+
+        <div class="text">
+            <h4>Secure Payment</h4>
+            <p>100% Secure Payment</p>
+        </div>
+
+    </div>
+
+    <div class="feature-item">
+
+        <div class="icon orange">
+            <i class="fa-solid fa-rotate-left"></i>
+        </div>
+
+        <div class="text">
+            <h4>Easy Returns</h4>
+            <p>Hassle Free Returns</p>
+        </div>
+
+    </div>
+
+</section>
+
+<footer>
+
+<div class="container5">
+
+<div class="footer-grid">
+
+<div class="footer-about">
+
+<div class="logo2">
+<img src="images/logo.png">
+</div>
+
+<p>
+FoodRange is your one-stop destination for ordering fresh food online.
+We offer a wide range of products and deliver freshness right to your doorstep.
+</p>
+
+<div class="social">
+
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-twitter"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+<a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+</div>
+
+</div>
+
+
+<div>
+
+<h4>Quick Links</h4>
+
+<ul>
+
+<li><a href="#">Home</a></li>
+<li><a href="#">Shop</a></li>
+<li><a href="#">Offers</a></li>
+<li><a href="#">Combo Packs</a></li>
+<li><a href="#">Restaurants</a></li>
+<li><a href="#">Blog</a></li>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Contact</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Customer Service</h4>
+
+<ul>
+
+<li><a href="#">My Account</a></li>
+<li><a href="#">Order Tracking</a></li>
+<li><a href="#">Wishlist</a></li>
+<li><a href="#">Returns</a></li>
+<li><a href="#">Privacy Policy</a></li>
+<li><a href="#">Terms</a></li>
+<li><a href="#">Support</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>Categories</h4>
+
+<ul>
+
+<li><a href="#">Fruits & Vegetables</a></li>
+<li><a href="#">Dairy</a></li>
+<li><a href="#">Bakery</a></li>
+<li><a href="#">Snacks</a></li>
+<li><a href="#">Beverages</a></li>
+<li><a href="#">Non-Veg</a></li>
+<li><a href="#">Ready To Eat</a></li>
+
+</ul>
+
+</div>
+
+
+<div>
+
+<h4>We Accept</h4>
+
+<div class="payments">
+
+<img src="images\visa.jpg">
+<img src="images\mastercard.jpg">
+<img src="images\paypal.jpg">
+<img src="images\american.jpg">
+
+</div>
+
+<div class="cod">
+
+<i class="fa-solid fa-money-bill-wave"></i>
+
+<span>Cash on Delivery</span>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="footer-bottom">
+
+<p>© 2026 FoodRange. All Rights Reserved.</p>
+
+<div class="featuress">
+
+<span><i class="fa-solid fa-leaf"></i> 100% Fresh</span>
+
+<span><i class="fa-solid fa-truck-fast"></i> On Time Delivery</span>
+
+<span><i class="fa-solid fa-credit-card"></i> Secure Payments</span>
+
+<span><i class="fa-solid fa-arrow-rotate-left"></i> Easy Returns</span>
+
+</div>
+
+</div>
+
+</div>
+
+</footer>
+<script src="offer.js"></script>
+</body>
+</html>

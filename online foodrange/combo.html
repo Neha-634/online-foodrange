@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online foodrange</title>
+    <link rel="stylesheet" href="combo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <div class="topbar">
+            <div class="mainlogo">
+                <div class="logo">
+                    <img src="images\logo.png">
+                </div>
+                <div class="logoname">
+                    <h2>FOODRANGE</h2>
+                    <p>Fresh Food Delivered</p>
+                </div>
+                 <div class="menu">
+             <button onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>  
+                </div>
+            </div>
+            <div class="category">
+                <select>
+                   <option value="ALL CATEGORIES">ALL CATEGORIES</option>
+                    <option value="ALL CATEGORIES">Fruits & Veggies</option>
+                      <option value="ALL CATEGORIES">Dairy & Eggs</option>
+                        <option value="ALL CATEGORIES">Bakery</option>
+                          <option value="ALL CATEGORIES">Snacks & Munchies</option>
+                            <option value="ALL CATEGORIES">Beverages</option>
+                              <option value="ALL CATEGORIES">Non-Veg</option>
+                </select>
+               
+              
+            </div>
+            <div class="search">
+                <div class="search1">
+                    <form>
+                        <input type="text" placeholder="Search For Products">
+                    </form>
+                </div>
+                <div class="button">
+                    <button class="btncst"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="loginimg">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="loginname">
+                    <h2>My Account</h2>
+                    <p>Login/Sign Up</p>
+                </div>
+            </div>
+            <div class="wish">
+                <div class="wishimg">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="wish1">
+                    <h2>Wishlist</h2>
+                    <p>0 items</p>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cartimg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cartname">
+                    <h2>My Cart</h2>
+                    <p>0 items</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="secheader">
+        <div class="browse">
+            <h4>Browse Categories</h4>
+        </div>
+        <div class="list">
+            <ul id="hiddenmenu">
+                <button onclick="classMenu()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Shop</a></li>
+                <li><a href="offer.html">Offers</a></li>
+                <li><a href="combo.html"class="active">Combo Packs</a></li>
+                <li><a href="aboutus.html">About US</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="free">
+            <h4>Free Delivery</h4>
+        </div>
+    </div>
+    <section class="hero">
+
+        <div class="overlay"></div>
+
+        <div class="container">
+
+            <div class="left">
+
+                <span class="small">Delicious</span>
+
+                <h1>
+                    COMBO <span>PACKS</span>
+                </h1>
+
+                <p>
+                    Save More • Eat Better • Delivered Fresh
+                </p>
+
+                <a href="#" class="btn1">
+                    Order Combo Now
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+            </div>
+
+            <div class="right">
+
+                <!-- <img src="images\pizzacombo.png" alt="Combo"> -->
+
+                <div class="badge">
+                    Best Deals<br>Everyday!
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <div class="search-area">
+
+        <input type="text" placeholder="Search Combo...">
+
+        <select>
+            <option>All Categories</option>
+        </select>
+
+        <select>
+            <option>All Prices</option>
+        </select>
+
+        <select>
+            <option>Sort By</option>
+        </select>
+
+        <button>
+            <i class="fa-solid fa-filter"></i>
+            Filter
+        </button>
+
+    </div>
+
+    <div class="categories">
+
+        <div class="item">🍔<span>All Combos</span></div>
+
+        <div class="item">🍳<span>Breakfast</span></div>
+
+        <div class="item">🍛<span>Lunch</span></div>
+
+        <div class="item">🍽<span>Dinner</span></div>
+
+        <div class="item">👨‍👩‍👧<span>Family Pack</span></div>
+
+        <div class="item">🎉<span>Party Pack</span></div>
+
+        <div class="item">🥗<span>Veg</span></div>
+
+        <div class="item">🍗<span>Non-Veg</span></div>
+
+    </div>
+    <section class="featured">
+
+        <div class="container6">
+
+            <h2>Featured <span>Combo Packs</span></h2>
+
+            <div class="cards">
+
+                <!-- Card 1 -->
+
+                <div class="card">
+
+                    <div class="image">
+
+                        <span class="tag">BEST SELLER</span>
+
+                        <img src="images\combo1.jpg">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h3>Family Feast Combo</h3>
+
+                        <div class="rating">
+
+                            ★★★★★ <span>(4.8)</span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>2 Burgers</li>
+
+                            <li>Large Fries</li>
+
+                            <li>2 Cold Drinks</li>
+
+                            
+
+                        </ul>
+
+                        <div class="price">
+
+                            <del>₹999</del>
+
+                            <h4>₹749</h4>
+
+                            <span class="offer">25% OFF</span>
+
+                        </div>
+
+                        <a href="#">Add To Cart</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 2 -->
+
+                <div class="card">
+
+                    <div class="image">
+
+                        <img src="images\combo2.jpg">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h3>Pizza Lovers Combo</h3>
+
+                        <div class="rating">
+
+                            ★★★★★ <span>(4.7)</span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>2 Large Pizza</li>
+
+                            <li>Garlic Bread</li>
+
+                            <li>1.5L Coke</li>
+
+                        </ul>
+
+                        <div class="price">
+
+                            <del>₹1299</del>
+
+                            <h4>₹999</h4>
+
+                            <span class="offer">23% OFF</span>
+
+                        </div>
+
+                        <a href="#">Add To Cart</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 3 -->
+
+                <div class="card">
+
+                    <div class="image">
+
+                        <img src="images\combo3.jpg">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h3>Healthy Veg Combo</h3>
+
+                        <div class="rating">
+
+                            ★★★★★ <span>(4.6)</span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>Fresh Salad</li>
+
+                            <li>Veg Soup</li>
+
+                            <li>Fruit Juice</li>
+
+                         
+                        </ul>
+
+                        <div class="price">
+
+                           
+                            <del>₹1299</del>
+
+                            <h4>₹999</h4>
+
+                            <span class="offer">23% OFF</span>
+
+
+                        </div>
+
+                        <a href="#">Add To Cart</a>
+
+                    </div>
+
+                </div>
+
+                <!-- Card 4 -->
+
+                <div class="card">
+
+                    <div class="image">
+
+                        <img src="images\combo4.jpg">
+
+                    </div>
+
+                    <div class="content">
+
+                        <h3>Chicken Feast Combo</h3>
+
+                        <div class="rating">
+
+                            ★★★★★ <span>(4.7)</span>
+
+                        </div>
+
+                        <ul>
+
+                            <li>4 Fried Chicken</li>
+
+                            <li>Large Fries</li>
+
+                            <li>Pepsi</li>
+
+                        </ul>
+
+                        <div class="price">
+
+                            <del>₹899</del>
+
+                            <h4>₹699</h4>
+
+                            <span class="offer">22% OFF</span>
+
+                        </div>
+
+                        <a href="#">Add To Cart</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+    <section class="special-offer">
+
+    <div class="offer-banner">
+
+        <div class="offer-content">
+
+            <span>🔥 TODAY'S SPECIAL COMBO</span>
+
+            <h2>BUY 2 GET 1 FREE</h2>
+
+            <p>Limited Time Offer</p>
+
+            <a href="#">Order Now</a>
+
+        </div>
+
+        <div class="offer-image">
+            <img src="images/pizza.png" alt="">
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="combo-boxes">
+
+    <div class="combo-card">
+
+        <div class="combo-info">
+
+            <h3>👨‍👩‍👧 Family Dinner Combo</h3>
+
+            <h4>Includes:</h4>
+
+            <ul>
+                <li>4 Main Courses</li>
+                <li>4 Drinks</li>
+                <li>Dessert</li>
+            </ul>
+
+            <div class="price">₹1499</div>
+
+            <a href="#">Order Now</a>
+
+        </div>
+
+        <img src="images\1.jpg">
+
+    </div>
+
+
+    <div class="combo-card">
+
+        <div class="combo-info">
+
+            <h3>💼 Office Lunch Combo</h3>
+
+            <h4>Perfect for Teams</h4>
+
+            <ul>
+                <li>5 Lunch Boxes</li>
+                <li>Drinks</li>
+                <li>Delivery Included</li>
+            </ul>
+
+            <div class="price">₹1999</div>
+
+            <a href="#">Order Now</a>
+
+        </div>
+
+        <img src="images\2.jpg">
+
+    </div>
+
+
+    <div class="combo-card">
+
+        <div class="combo-info">
+
+            <h3>🎉 Party Combo Pack</h3>
+
+            <h4>Birthday Special</h4>
+
+            <ul>
+                <li>2 Pizza</li>
+                <li>Burgers</li>
+                <li>Drinks</li>
+            
+            </ul>
+
+            <div class="price">₹2999</div>
+
+            <a href="#">Order Now</a>
+
+        </div>
+
+        <img src="images\3.jpg">
+
+    </div>
+
+</section>
+
+
+
+<section class="why">
+
+<h2>Why Choose Our <span>Combo Packs?</span></h2>
+
+<div class="why-grid">
+
+<div class="why-item">
+
+<div class="icon">🚚</div>
+
+<h4>Fast Delivery</h4>
+
+<p>On Time Delivery</p>
+
+</div>
+
+<div class="why-item">
+
+<div class="icon">🥬</div>
+
+<h4>Fresh Ingredients</h4>
+
+<p>100% Fresh Food</p>
+
+</div>
+
+<div class="why-item">
+
+<div class="icon">💰</div>
+
+<h4>Best Savings</h4>
+
+<p>Pocket Friendly</p>
+
+</div>
+
+<div class="why-item">
+
+<div class="icon">🎁</div>
+
+<h4>Daily Offers</h4>
+
+<p>Exciting Discounts</p>
+
+</div>
+
+<div class="why-item">
+
+<div class="icon">💳</div>
+
+<h4>Secure Payment</h4>
+
+<p>100% Safe</p>
+
+</div>
+
+<div class="why-item">
+
+<div class="icon">⭐</div>
+
+<h4>Premium Quality</h4>
+
+<p>Best Food Quality</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="why-us">
+
+    <h2>Why Choose Our <span>Combo Packs?</span></h2>
+
+    <div class="why-grid">
+
+        <div class="why-box">
+            <div class="icon">🚚</div>
+            <h4>Fast Delivery</h4>
+            <p>On Time Delivery</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">🥗</div>
+            <h4>Fresh Ingredients</h4>
+            <p>100% Fresh Food</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">💰</div>
+            <h4>Best Savings</h4>
+            <p>Pocket Friendly</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">🎁</div>
+            <h4>Daily Offers</h4>
+            <p>Exciting Discounts</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">💳</div>
+            <h4>Secure Payment</h4>
+            <p>100% Safe</p>
+        </div>
+
+        <div class="why-box">
+            <div class="icon">⭐</div>
+            <h4>Premium Quality</h4>
+            <p>Best Food Quality</p>
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- TESTIMONIAL -->
+
+<section class="testimonial">
+
+<h2>What Our <span>Customers Say</span></h2>
+
+<div class="testimonial-wrapper">
+
+<div class="arrow">&#10094;</div>
+
+<div class="review">
+
+<img src="images\maleemp.jpg">
+
+<div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+Amazing combo offers. Food was fresh, tasty and delivery was super quick.
+Highly recommended!
+</p>
+
+<h4>Rahul Sharma</h4>
+
+</div>
+
+</div>
+
+
+<div class="review">
+
+<img src="images\femaleemp.jpg">
+
+<div>
+
+<div class="stars">★★★★★</div>
+
+<p>
+Best value for money. Combo packs are perfect for family and parties.
+</p>
+
+<h4>Anjali Verma</h4>
+
+</div>
+
+</div>
+
+<div class="arrow">&#10095;</div>
+
+</div>
+
+</section>
+
+
+
+<!-- NEWSLETTER -->
+
+<section class="newsletter">
+
+<div class="newsletter-left">
+
+<img src="images\noodle.jpg">
+
+<div>
+
+<h2>Get Exclusive Combo Offers!</h2>
+
+<p>Subscribe now and receive discounts directly in your inbox.</p>
+
+</div>
+
+</div>
+
+<div class="newsletter-right">
+
+<input type="email" placeholder="Enter your email">
+
+<button>Subscribe</button>
+
+</div>
+
+</section>
+
+
+    <footer>
+
+        <div class="container5">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <div class="logo2">
+                        <img src="images/logo.png">
+                    </div>
+
+                    <p>
+                        FoodRange is your one-stop destination for ordering fresh food online.
+                        We offer a wide range of products and deliver freshness right to your doorstep.
+                    </p>
+
+                    <div class="social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Combo Packs</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Customer Service</h4>
+
+                    <ul>
+
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Support</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Categories</h4>
+
+                    <ul>
+
+                        <li><a href="#">Fruits & Vegetables</a></li>
+                        <li><a href="#">Dairy</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Non-Veg</a></li>
+                        <li><a href="#">Ready To Eat</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>We Accept</h4>
+
+                    <div class="payments">
+
+                        <img src="images\visa.jpg">
+                        <img src="images\mastercard.jpg">
+                        <img src="images\paypal.jpg">
+                        <img src="images\american.jpg">
+
+                    </div>
+
+                    <div class="cod">
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+
+                        <span>Cash on Delivery</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>© 2026 FoodRange. All Rights Reserved.</p>
+
+                <div class="featuress">
+
+                    <span><i class="fa-solid fa-leaf"></i> 100% Fresh</span>
+
+                    <span><i class="fa-solid fa-truck-fast"></i> On Time Delivery</span>
+
+                    <span><i class="fa-solid fa-credit-card"></i> Secure Payments</span>
+
+                    <span><i class="fa-solid fa-arrow-rotate-left"></i> Easy Returns</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="combo.js"></script>
+</body>
+
+</html>

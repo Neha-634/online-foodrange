@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online foodrange</title>
+      <link rel="stylesheet" href="contactus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+      <header>
+        <div class="topbar">
+            <div class="mainlogo">
+                <div class="logo">
+                    <img src="images\logo.png">
+                </div>
+                <div class="logoname">
+                    <h2>FOODRANGE</h2>
+                    <p>Fresh Food Delivered</p>
+                </div>
+                 <div class="menu">
+             <button onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>  
+                </div>
+            </div>
+            <div class="category">
+                <select>
+                    <option value="ALL CATEGORIES">ALL CATEGORIES</option>
+                    <option value="ALL CATEGORIES">Fruits & Veggies</option>
+                      <option value="ALL CATEGORIES">Dairy & Eggs</option>
+                        <option value="ALL CATEGORIES">Bakery</option>
+                          <option value="ALL CATEGORIES">Snacks & Munchies</option>
+                            <option value="ALL CATEGORIES">Beverages</option>
+                              <option value="ALL CATEGORIES">Non-Veg</option>
+                </select>
+               
+               
+            </div>
+            <div class="search">
+                <div class="search1">
+                    <form>
+                        <input type="text" placeholder="Search For Products">
+                    </form>
+                </div>
+                <div class="button">
+                    <button class="btncst"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="loginimg">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="loginname">
+                    <h2>My Account</h2>
+                    <p>Login/Sign Up</p>
+                </div>
+            </div>
+            <div class="wish">
+                <div class="wishimg">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="wish1">
+                    <h2>Wishlist</h2>
+                    <p>0 items</p>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cartimg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cartname">
+                    <h2>My Cart</h2>
+                    <p>0 items</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="secheader">
+        <div class="browse">
+            <h4>Browse Categories</h4>
+        </div>
+        <div class="list">
+            <ul id="hiddenmenu">
+                <button onclick="classMenu()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Shop</a></li>
+                <li><a href="offer.html">Offers</a></li>
+                <li><a href="combo.html">Combo Packs</a></li>
+                <li><a href="aboutus.html">About US</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html"class="active">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="free">
+            <h4>Free Delivery</h4>
+        </div>
+    </div>
+
+<section class="page-banner">
+
+    <div class="overlay">
+
+        <h1>Contact Us</h1>
+
+        <div class="breadcrumb">
+            <a href="#">Home</a>
+            <span>></span>
+            <span class="active">Contact Us</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="contact-section">
+
+    <!-- Contact Form -->
+
+    <div class="contact-form">
+
+        <h2>We’d Love to Hear From You!</h2>
+
+        <span class="line"></span>
+
+        <p>
+            Have a question, suggestion, or feedback?
+            Fill out the form below and our team will
+            get back to you as soon as possible.
+        </p>
+
+        <form>
+
+            <div class="row">
+
+                <div class="input-box">
+                    <i class="fa-regular fa-user"></i>
+                    <input type="text" placeholder="Your Name">
+                </div>
+
+                <div class="input-box">
+                    <i class="fa-regular fa-envelope"></i>
+                    <input type="email" placeholder="Your Email">
+                </div>
+
+            </div>
+
+            <div class="input-box full">
+                <i class="fa-solid fa-phone"></i>
+                <input type="text" placeholder="Phone Number">
+            </div>
+
+            <div class="input-box full">
+                <i class="fa-solid fa-bars"></i>
+
+                <select>
+                    <option>Select Subject</option>
+                    <option>General Inquiry</option>
+                    <option>Support</option>
+                    <option>Complaint</option>
+                </select>
+            </div>
+
+            <div class="input-box full textarea">
+                <i class="fa-solid fa-pen"></i>
+                <textarea placeholder="Your Message"></textarea>
+            </div>
+
+            <button>
+                <i class="fa-solid fa-paper-plane"></i>
+                Send Message
+            </button>
+
+        </form>
+
+    </div>
+
+
+    <!-- Contact Details -->
+
+    <div class="contact-info">
+
+        <h2>Get in Touch</h2>
+
+        <span class="line"></span>
+
+        <div class="info">
+
+            <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+
+            <div>
+                <h4>Our Location</h4>
+                <p>FoodRange, 123 Fresh Street,<br>
+                Food City, FC 560001, India</p>
+            </div>
+
+        </div>
+
+        <div class="info">
+
+            <div class="icon"><i class="fa-solid fa-phone"></i></div>
+
+            <div>
+                <h4>Phone Number</h4>
+                <p>+91 98765 43210<br>+91 91234 56789</p>
+            </div>
+
+        </div>
+
+        <div class="info">
+
+            <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+
+            <div>
+                <h4>Email Address</h4>
+                <p>support@foodrange.com<br>
+                info@foodrange.com</p>
+            </div>
+
+        </div>
+
+        <div class="info">
+
+            <div class="icon"><i class="fa-regular fa-clock"></i></div>
+
+            <div>
+                <h4>Working Hours</h4>
+                <p>Mon-Sat : 8:00 AM - 10:00 PM<br>
+                Sunday : 9:00 AM - 9:00 PM</p>
+            </div>
+
+        </div>
+
+        <div class="social">
+
+            <h4>Connect With Us</h4>
+
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="service-area">
+
+    <div class="service-box">
+
+        <div class="service-icon">
+            <i class="fa-solid fa-circle-check"></i>
+        </div>
+
+        <div class="service-content">
+            <h3>100% Fresh Food</h3>
+            <p>We deliver only the freshest food to you.</p>
+        </div>
+
+    </div>
+
+    <div class="service-box">
+
+        <div class="service-icon">
+            <i class="fa-solid fa-motorcycle"></i>
+        </div>
+
+        <div class="service-content">
+            <h3>On-Time Delivery</h3>
+            <p>Fast and reliable delivery at your doorstep.</p>
+        </div>
+
+    </div>
+
+    <div class="service-box">
+
+        <div class="service-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+        </div>
+
+        <div class="service-content">
+            <h3>Secure Payment</h3>
+            <p>Multiple secure payment options available.</p>
+        </div>
+
+    </div>
+
+    <div class="service-box">
+
+        <div class="service-icon">
+            <i class="fa-solid fa-headset"></i>
+        </div>
+
+        <div class="service-content">
+            <h3>24/7 Support</h3>
+            <p>Our support team is always here to help you.</p>
+        </div>
+
+    </div>
+
+</section>
+      <footer>
+
+        <div class="container5">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <div class="logo2">
+                        <img src="images/logo.png">
+                    </div>
+
+                    <p>
+                        FoodRange is your one-stop destination for ordering fresh food online.
+                        We offer a wide range of products and deliver freshness right to your doorstep.
+                    </p>
+
+                    <div class="social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Combo Packs</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Customer Service</h4>
+
+                    <ul>
+
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Support</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Categories</h4>
+
+                    <ul>
+
+                        <li><a href="#">Fruits & Vegetables</a></li>
+                        <li><a href="#">Dairy</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Non-Veg</a></li>
+                        <li><a href="#">Ready To Eat</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>We Accept</h4>
+
+                    <div class="payments">
+
+                        <img src="images\visa.jpg">
+                        <img src="images\mastercard.jpg">
+                        <img src="images\paypal.jpg">
+                        <img src="images\american.jpg">
+
+                    </div>
+
+                    <div class="cod">
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+
+                        <span>Cash on Delivery</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>© 2026 FoodRange. All Rights Reserved.</p>
+
+                <div class="featuress">
+
+                    <span><i class="fa-solid fa-leaf"></i> 100% Fresh</span>
+
+                    <span><i class="fa-solid fa-truck-fast"></i> On Time Delivery</span>
+
+                    <span><i class="fa-solid fa-credit-card"></i> Secure Payments</span>
+
+                    <span><i class="fa-solid fa-arrow-rotate-left"></i> Easy Returns</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <script src="contactus.js"></script>
+</body>
+</html>

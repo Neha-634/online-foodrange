@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>online foodrange</title>
+     <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+     <header>
+        <div class="topbar">
+            <div class="mainlogo">
+                <div class="logo">
+                    <img src="images\logo.png">
+                </div>
+                <div class="logoname">
+                    <h2>FOODRANGE</h2>
+                    <p>Fresh Food Delivered</p>
+                </div>
+                 <div class="menu">
+             <button onclick="showMenu()"><i class="fa-solid fa-bars"></i></button>  
+                </div>
+            </div>
+            <div class="category">
+                <select>
+                    <option value="ALL CATEGORIES">ALL CATEGORIES</option> 
+                    <option value="ALL CATEGORIES">Fruits & Veggies</option>
+                      <option value="ALL CATEGORIES">Dairy & Eggs</option>
+                        <option value="ALL CATEGORIES">Bakery</option>
+                          <option value="ALL CATEGORIES">Snacks & Munchies</option>
+                            <option value="ALL CATEGORIES">Beverages</option>
+                              <option value="ALL CATEGORIES">Non-Veg</option>
+                </select>
+               
+              
+            </div>
+            <div class="search">
+                <div class="search1">
+                    <form>
+                        <input type="text" placeholder="Search For Products">
+                    </form>
+                </div>
+                <div class="button">
+                    <button class="btncst"><a href="#"><i class="fa-solid fa-magnifying-glass"></i></a></button>
+                </div>
+            </div>
+            <div class="login">
+                <div class="loginimg">
+                    <i class="fa-regular fa-user"></i>
+                </div>
+                <div class="loginname">
+                    <h2>My Account</h2>
+                    <p>Login/Sign Up</p>
+                </div>
+            </div>
+            <div class="wish">
+                <div class="wishimg">
+                    <i class="fa-regular fa-heart"></i>
+                </div>
+                <div class="wish1">
+                    <h2>Wishlist</h2>
+                    <p>0 items</p>
+                </div>
+            </div>
+            <div class="cart">
+                <div class="cartimg">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <div class="cartname">
+                    <h2>My Cart</h2>
+                    <p>0 items</p>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="secheader">
+        <div class="browse">
+            <h4>Browse Categories</h4>
+        </div>
+        <div class="list">
+             <ul id="hiddenmenu">
+                <button onclick="classMenu()">X</button>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index2.html">Shop</a></li>
+                <li><a href="offer.html">Offers</a></li>
+                <li><a href="combo.html">Combo Packs</a></li>
+                <li><a href="aboutus.html"class="active">About US</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </div>
+        <div class="free">
+            <h4>Free Delivery</h4>
+        </div>
+    </div>
+    <section class="about-section">
+    <div class="container">
+
+        <!-- Left Side -->
+        <div class="left">
+
+            <img src="images\logo.png" class="logo1" alt="FoodRange Logo">
+
+            <h1>ABOUT <span>US</span></h1>
+
+            <div class="line"></div>
+
+            <p>
+                At <span class="highlight">FOODRANGE</span>, we believe that great
+                food brings people together. That's why we're committed to delivering
+                fresh, delicious, and high-quality food right to your doorstep.
+            </p>
+
+        </div>
+
+        <!-- Center -->
+        <div class="center">
+
+            <img src="images\aboutus.jpg" alt="Healthy Food">
+
+        </div>
+
+        <!-- Right -->
+        <div class="right">
+
+            <div class="mission">
+
+                <div class="icon">
+                    <i class="fa-solid fa-bullseye"></i>
+                </div>
+
+                <div>
+                    <h2>OUR MISSION</h2>
+
+                    <p>
+                        Our mission is simple – to make every meal a delightful
+                        experience by offering a wide variety of fresh food options,
+                        fast delivery, and excellent customer service.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="why-box">
+
+                <h3>WHY CHOOSE <span>FOODRANGE?</span></h3>
+
+                <ul>
+
+                    <li><i class="fa-solid fa-circle-check"></i>100% Fresh & Quality Food</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Wide Range of Options</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>On-Time Delivery</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Secure & Easy Payments</li>
+
+                    <li><i class="fa-solid fa-circle-check"></i>Dedicated Customer Support</li>
+
+                </ul>
+
+                <img src="images\deliever.jpg"
+                class="delivery"
+                alt="Delivery">
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="story-section">
+
+    <div class="story-content">
+
+        <div class="story-left">
+
+            <h2>OUR <span>STORY</span></h2>
+
+            <div class="line"></div>
+
+            <p>
+                FOODRANGE was founded with a passion for food and a promise of convenience.
+                We started our journey to help people enjoy restaurant-style,
+                home-style, and healthy meals without stepping out.
+            </p>
+
+        </div>
+
+        <div class="featuree">
+
+            <div class="circle">
+                🍜
+            </div>
+
+            <h4>FRESH INGREDIENTS</h4>
+
+            <p>
+                We use the finest and freshest ingredients in every meal we serve.
+            </p>
+
+        </div>
+
+        <div class="featuree1">
+
+            <div class="circle">
+                👨‍🍳
+            </div>
+
+            <h4>EXPERTLY PREPARED</h4>
+
+            <p>
+                Our food is prepared by skilled chefs with love and hygiene.
+            </p>
+
+        </div>
+
+        <div class="featuree2">
+
+            <div class="circle">
+                ❤️
+            </div>
+
+            <h4>MADE WITH CARE</h4>
+
+            <p>
+                Every order is packed with care and delivered with a smile.
+            </p>
+
+        </div>
+
+    </div>
+
+    <div class="story-image">
+
+        <img src="images\friends.jpg" alt="Friends Eating">
+
+    </div>
+
+</section>
+
+<section class="promise-section">
+
+    <div class="promise-left">
+
+        <h2>OUR <span>PROMISE</span></h2>
+
+        <div class="title-line"></div>
+
+        <p>
+            We are dedicated to delivering not just food,
+            but happiness, right to your doorstep.
+            Your satisfaction is our top priority.
+        </p>
+
+    </div>
+
+    <div class="promise-image">
+
+        <img src="images\Fruits & Veggies.jpg" alt="Food Bag">
+
+    </div>
+
+    <div class="stats">
+
+        <div class="card">
+            <div class="icon red">
+                <i class="fa-solid fa-users"></i>
+            </div>
+
+            <h3>10K+</h3>
+            <p>Happy Customers</p>
+        </div>
+
+        <div class="card">
+            <div class="icon green">
+                <i class="fa-solid fa-bag-shopping"></i>
+            </div>
+
+            <h3>5K+</h3>
+            <p>Delicious Dishes</p>
+        </div>
+
+        <div class="card">
+            <div class="icon orange">
+                <i class="fa-solid fa-motorcycle"></i>
+            </div>
+
+            <h3>99%</h3>
+            <p>On-Time Delivery</p>
+        </div>
+
+        <div class="card">
+            <div class="icon olive">
+                <i class="fa-solid fa-award"></i>
+            </div>
+
+            <h3>4.8 <span>★</span></h3>
+            <p>Customer Rating</p>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Bottom Strip -->
+
+<div class="bottom-strip">
+
+    <div>
+        <i class="fa-regular fa-heart"></i>
+        Thank you for choosing <strong>FOODRANGE.</strong>
+    </div>
+
+    <div class="divider"></div>
+
+    <div>
+        Good Food, Good Mood – Delivered Fresh!
+    </div>
+
+    <div class="leaf">
+        <i class="fa-solid fa-leaf"></i>
+    </div>
+
+</div>
+
+
+   <footer>
+
+        <div class="container5">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <div class="logo2">
+                        <img src="images/logo.png">
+                    </div>
+
+                    <p>
+                        FoodRange is your one-stop destination for ordering fresh food online.
+                        We offer a wide range of products and deliver freshness right to your doorstep.
+                    </p>
+
+                    <div class="social">
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Quick Links</h4>
+
+                    <ul>
+
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Shop</a></li>
+                        <li><a href="#">Offers</a></li>
+                        <li><a href="#">Combo Packs</a></li>
+                        <li><a href="#">Restaurants</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Customer Service</h4>
+
+                    <ul>
+
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Order Tracking</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms</a></li>
+                        <li><a href="#">Support</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>Categories</h4>
+
+                    <ul>
+
+                        <li><a href="#">Fruits & Vegetables</a></li>
+                        <li><a href="#">Dairy</a></li>
+                        <li><a href="#">Bakery</a></li>
+                        <li><a href="#">Snacks</a></li>
+                        <li><a href="#">Beverages</a></li>
+                        <li><a href="#">Non-Veg</a></li>
+                        <li><a href="#">Ready To Eat</a></li>
+
+                    </ul>
+
+                </div>
+
+
+                <div>
+
+                    <h4>We Accept</h4>
+
+                    <div class="payments">
+
+                        <img src="images\visa.jpg">
+                        <img src="images\mastercard.jpg">
+                        <img src="images\paypal.jpg">
+                        <img src="images\american.jpg">
+
+                    </div>
+
+                    <div class="cod">
+
+                        <i class="fa-solid fa-money-bill-wave"></i>
+
+                        <span>Cash on Delivery</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>© 2026 FoodRange. All Rights Reserved.</p>
+
+                <div class="featuress">
+
+                    <span><i class="fa-solid fa-leaf"></i> 100% Fresh</span>
+
+                    <span><i class="fa-solid fa-truck-fast"></i> On Time Delivery</span>
+
+                    <span><i class="fa-solid fa-credit-card"></i> Secure Payments</span>
+
+                    <span><i class="fa-solid fa-arrow-rotate-left"></i> Easy Returns</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+<script src="aboutus.js"></script>
+</body>
+</html>
